@@ -1,11 +1,11 @@
-About autogluon.vision
-======================
+About autogluon.vision-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/autogluon.vision-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/autogluon.vision
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/autogluon.vision-feedstock/blob/main/LICENSE.txt)
 
 Summary: AutoML for Image, Text, and Tabular Data
 

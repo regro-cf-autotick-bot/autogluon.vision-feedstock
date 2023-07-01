@@ -1,5 +1,5 @@
 {% set name = "autogluon.vision" %}
-{% set version = "0.6.2" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,15 +7,15 @@ package:
 
 source:
   url: https://github.com/autogluon/autogluon/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 96075e9bfce79420fe78a5566a1ba82f9a80598e955f4a4fc490f5561ede70bd
+  sha256: 381ca65386793cc304bf4d439622f33553dc6c7afa09a22a2be4584319a8bf09
 
 build:
-  skip: True  # [win]
-  skip: True  # [py>=310]
+  skip: true  # [win]
+  skip: true  # [py>=310]
   script: {{ PYTHON }} -m pip install ./vision -vv
-  number: 1
+  number: 0
   script_env:
-   - RELEASE=1
+    - RELEASE=1
 
 requirements:
   build:
@@ -31,7 +31,7 @@ requirements:
     - {{ cdt('libxxf86vm') }}  # [linux]
     - {{ cdt('libxext') }}     # [linux]
   host:
-    - python 
+    - python
     - pip
     - xorg-libxfixes  # [linux]
   run:
